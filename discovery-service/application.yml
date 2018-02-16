@@ -1,0 +1,15 @@
+#
+# Server Properties
+#
+server:
+    port: ${DISCOVERY_SERVICE_SERVER_PORT:8761}
+    contextPath: ${DISCOVERY_SERVICE_SERVER_CONTEXT_PATH:/}
+
+#
+# Eureka Properties
+#
+eureka:
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+
