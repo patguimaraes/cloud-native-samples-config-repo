@@ -1,14 +1,9 @@
 #
-# Security Properties
-#
-security:
-    requireSsl: true
-
-#
 # Server Properties
 #
 server:
     ssl:
+        enabled: true
         keyStore: ${user.home}/.keystore
         keyStorePassword: changeit
         protocol: ${SSL_PROTOCOL:TLSv1.2}
@@ -57,5 +52,8 @@ logging:
         org.springframework.boot: ${LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_BOOT:WARN}
         org.springframework.boot.actuate: ${LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_BOOT_ACTUATE:WARN}
         org.springframework.cloud.config.client: ${LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_CLOUD_CONFIG_CLIENT:WARN}
+        org.springframework.cloud.config.server: ${LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_CLOUD_CONFIG_SERVER:WARN}
+        org.springframework.cloud.netflix: ${LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_CLOUD_NETFLIX:WARN}
+        com.netflix: ${LOGGING_LEVEL_COM.NETFLIX:DEBUG}
         sample: DEBUG
 
