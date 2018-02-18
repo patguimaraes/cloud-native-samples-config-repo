@@ -62,6 +62,6 @@ logging:
         org.springframework.cloud.config.client: ${LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_CLOUD_CONFIG_CLIENT:WARN}
         org.springframework.cloud.config.server: ${LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_CLOUD_CONFIG_SERVER:WARN}
         org.springframework.cloud.netflix: ${LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_CLOUD_NETFLIX:WARN}
-        com.netflix: ${LOGGING_LEVEL_COM.NETFLIX:WARN}
+        com.netflix: ${LOGGING_LEVEL_COM_NETFLIX:WARN}
         sample: DEBUG
 
