@@ -1,0 +1,7 @@
+#
+# Server Properties
+#
+server:
+    port: ${USER_SERVICE_SERVER_PORT:10443}
+    contextPath: ${USER_SERVICE_SERVER_CONTEXT_PATH:/}
+
